@@ -1,0 +1,109 @@
+.navber {
+  background-color: green;
+  color: white;
+  position: sticky;
+  top: 0;
+  border-bottom: 2px solid #45d345;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+.nav h2 {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.navUl {
+  display: flex;
+  gap: 20px;
+  font-size: 18px;
+}
+.navLink {
+  cursor: pointer;
+  transition: all 0.3s;
+  color: white;
+}
+.activeLink {
+  color: #d02828;
+  font-weight: bold;
+}
+.navLink:hover {
+  color: #ffc800;
+}
+
+.manuDiv {
+  display: none;
+}
+
+.navManu {
+  color: white;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.navBtn {
+  color: white;
+  background-color: #3dbd3d;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  box-shadow: 1px 1px 10px 5px #40c034;
+  transition: all 0.3s;
+}
+.navBtn:hover {
+  background-color: #0caa0c;
+}
+.mobileBar {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .navUl {
+    display: none;
+  }
+  .nav {
+    padding: 10px 20px;
+  }
+  .nav h2 {
+    font-size: 20px;
+  }
+  .navBtn {
+    display: none;
+  }
+
+  .manuDiv {
+    display: block;
+  }
+  .mobileBar {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    background-color: rgba(20, 185, 14, 0.9);
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+  }
+  .mobileBar li {
+    width: fit-content;
+    transition: all 0.3s;
+  }
+  .mobileBar li:hover {
+    color: #ffc800;
+  }
+  .hidden {
+    display: none;
+  }
+}
