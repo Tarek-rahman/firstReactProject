@@ -5,7 +5,7 @@
   align-items: center;
   gap: 10px;
   height: 90vh;
-  background-image: url('../assets/pexels-lilartsy-1111597.jpg');
+  background-image: url('../../assets/pexels-lilartsy-1111597.jpg');
   background-size: cover;
   background-position: bottom;
 }

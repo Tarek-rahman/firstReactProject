@@ -85,7 +85,10 @@ const Navber = () => {
             </Link>
           </li>
         </ul>
-        <button className="navBtn">Login</button>
+        <Link to={'/login'}>
+          <button className="navBtn">Login</button>
+        </Link>
+
         {/* Mobile bar */}
         <ul className={`mobileBar ${isOpen ? 'open' : 'hidden'}`}>
           <li>
